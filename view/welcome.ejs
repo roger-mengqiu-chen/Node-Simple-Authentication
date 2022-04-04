@@ -1,0 +1,11 @@
+<%- include('includes/head.ejs') %>
+
+<main>
+  <h1>Welcome! You are logged in</h1>
+  <form action="/logout" method="post">
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+    <button type="submit">Logout</button>
+  </form>
+</main>
+
+<%- include('includes/end.ejs') %>
